@@ -1,0 +1,31 @@
+Start
+    // Include necessary libraries
+    Include libraries: SPI, LoRa
+
+    // Check initial conditions
+    If input voltage is between 5.5V and 1.1V:
+        Initialize SPI
+        Initialize LoRa
+
+    // Main Loop
+    While True:
+        // Update system time
+        t = Get system time
+        
+        // Search for packet
+        If packet is available:
+            // Read packet
+            Read packet
+            
+            // Open text file to save data
+            Open text file
+            
+            // Save data in text file
+            Save date, time, VWC, Celsius, counter in text file
+            
+            // Close text file
+            Close text file
+        
+        // Wait for Δt time before next iteration
+        t = t + Δt
+End

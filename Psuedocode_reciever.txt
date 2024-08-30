@@ -1,0 +1,16 @@
+Start
+    Include libraries: SPI, LoRa
+
+    If input voltage is between 5.5V and 1.1V:
+        Initialize SPI
+        Initialize LoRa
+
+    While True:
+        t = Get system time
+        If packet is available:
+            Read packet
+            Open text file
+            Save date, time, VWC, Celsius, counter in text file
+            Close text file
+        t = t + Δt
+End
